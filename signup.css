@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    width: 30%;
+    margin: auto;
+    padding: 3rem;
+    background-color: aqua;
+    border-radius: 5px;
+    margin-top: 3rem;
+}
+
+input,label,button{
+    display: block;
+    margin-top: 0.2rem;
+    width: 90%;
+}
+
+button{
+    height: 3.5rem;
+    margin-top: 1rem;
+    background-color: brown;
+    border-radius: 5px;
+    border: none;
+    padding: 0.2rem 0rem;
+    color: white;
+}
+button:active{
+    background-color: black;
+}
+span{
+    color: red;
+    margin-bottom: 0.3rem;
+}
+

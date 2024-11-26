@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin: 20px 0;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Section Styles */
+#search-book {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ff6f61;
+    text-align: center;
+}
+
+#searchBookForm {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ff6f61;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+    background-color: #e55b48;
+    transform: scale(1.05);
+}
+
+/* Book List Section Styles */
+#book-list {
+    max-width: 1200px;
+    margin: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+ul#books {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Book Card Styles */
+ul#books li {
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: var(--card-bg-color); /* Background color applied dynamically */
+}
+
+ul#books li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+ul#books li img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 4px solid #ff6f61;
+}
+
+ul#books li .content {
+    padding: 20px;
+    flex-grow: 1;
+    background: linear-gradient(145deg, #f5f5f5, #ffffff);
+}
+
+ul#books li h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+ul#books li p {
+    font-size: 1rem;
+    color: #666;
+}
+
+ul#books li button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+ul#books li button:hover {
+    background-color: #e55b48;
+    transform: scale(1.05);
+}
+/* Book Card Styles */
+ul#books li {
+    border-radius: 12px;
+    border: 2px solid #dddddd; /* Light grey border for visibility */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: var(--card-bg-color, #ffffff); /* Default color if the variable is not set */
+}
+
+ul#books li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}

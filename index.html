@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Library Management System</h1>
+    <button id="logout">logout</button>
+
+    <section id="search-book">
+        <h2>Search for Books</h2>
+        <form id="searchBookForm">
+            <input type="text" id="searchQuery" placeholder="Enter book title or author" required>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+    <section id="book-list">
+        <h2>Books Available</h2>
+        <ul id="books">
+            <!-- Books will be dynamically added here -->
+        </ul>
+    </section>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
